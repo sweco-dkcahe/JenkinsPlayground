@@ -12,7 +12,7 @@ namespace JenkinsAPITest
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            //Assert.Pass();
             //Arrange
 
             //Act
@@ -21,7 +21,7 @@ namespace JenkinsAPITest
             int[] numbers = DummyLogic.GetNumbers().ToArray();
 
             //Assert
-
+            Assert.Fail();
         }
     }
 }
