@@ -10,7 +10,7 @@ pipeline {
         stage('Restoring'){
             steps{
                 echo 'Restore'
-                bat 'cd JenkinsPlayground\JenkinsAPI'
+                bat 'cd JenkinsAPI'
                 bat 'dotnet restore'
             }
         }
