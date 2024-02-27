@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage(''){
-            steps{
-                cleanWs()
-            }
-        }
         stage('Restoring'){
             steps{
                 echo 'Restore'
