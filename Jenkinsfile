@@ -10,6 +10,7 @@ pipeline {
         stage('Restoring'){
             steps{
                 echo 'Restore'
+                echo 'Current Workspace is ${env.WORKSPACE}'
                 bat 'cd JenkinsAPI'
                 bat 'dotnet restore'
             }
