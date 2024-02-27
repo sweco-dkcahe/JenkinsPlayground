@@ -5,8 +5,6 @@ pipeline {
         stage('Restoring'){
             steps{
                 echo 'Restore'
-                echo 'Running in ${env.WORKSPACE} on ${env.JENKINS_URL}'
-                bat 'cd JenkinsAPI'
                 bat 'dotnet restore'
             }
         }
