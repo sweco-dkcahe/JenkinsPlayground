@@ -5,8 +5,10 @@ pipeline {
         stage('Restoring'){
             steps{
                 echo 'Restore'
-                bat 'cd ./JenkinsAPI'
+                dir ('./JenkinsAPI')
+                {
                 bat 'dotnet restore'
+                }
             }
         }
         stage('Testing'){
